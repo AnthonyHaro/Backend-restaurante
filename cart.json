@@ -1,0 +1,142 @@
+[
+  {
+    "email": "admin@gmail.com",
+    "items": [
+      {
+        "dishId": 1748991299155,
+        "name": "Costilla de cerdo",
+        "price": "7.50",
+        "image": "/uploads/1748991299151-693048230.png",
+        "description": "Costilla de cerdo servida con choclo, papa chaucha, ensalada y salsas: queso, mayonesa y vinagreta.",
+        "quantity": 1
+      },
+      {
+        "dishId": 1748991424708,
+        "name": "Cariucho de costilla de cerdo",
+        "price": "750",
+        "image": "/uploads/1748991424706-380710856.png",
+        "description": "Costilla de cerdo con papas en salsa de maní, acompañada de tomate, aguacate y lechuga fresca.",
+        "quantity": 1
+      },
+      {
+        "dishId": 1747177376509,
+        "name": "Chuletas",
+        "price": "3.50",
+        "image": "/uploads/1747177376506-627858479.jpg",
+        "description": "Chuletas con papas, ensalada y arroz ",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "dishId": 1748991299155,
+        "name": "Costilla de cerdo",
+        "price": "7.50",
+        "image": "/uploads/1748991299151-693048230.png",
+        "description": "Costilla de cerdo servida con choclo, papa chaucha, ensalada y salsas: queso, mayonesa y vinagreta.",
+        "quantity": 2
+      },
+      {
+        "dishId": 1748991424708,
+        "name": "Cariucho de costilla de cerdo",
+        "price": "7.50",
+        "image": "/uploads/1748991424706-380710856.png",
+        "description": "Costilla de cerdo con papas en salsa de maní, acompañada de tomate, aguacate y lechuga fresca.",
+        "quantity": 1
+      },
+      {
+        "dishId": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "description": "6 pristiños por un dólar",
+        "quantity": 1
+      },
+      {
+        "dishId": 1747168445805,
+        "name": "Espumilla",
+        "price": "0.50",
+        "image": "/uploads/1747168445802-45896671.jpg",
+        "description": "Espumilla",
+        "quantity": 1
+      },
+      {
+        "dishId": 1748991856129,
+        "name": "Pan de casa",
+        "price": "1",
+        "image": "/uploads/1748991856123-613236859.png",
+        "description": "Pan de casa, maíz o leche",
+        "quantity": 1
+      },
+      {
+        "dishId": 1748991664356,
+        "name": "Colada Morada",
+        "price": "1.50",
+        "image": "/uploads/1748991892668-323100489.jpeg",
+        "description": "Colada morada tradicional",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "email": "carlos@gmail.com",
+    "items": [
+      {
+        "dishId": 1747168445805,
+        "name": "Espumilla",
+        "price": "0.50",
+        "image": "/uploads/1747168445802-45896671.jpg",
+        "description": "Espumilla",
+        "quantity": 1
+      },
+      {
+        "dishId": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "description": "6 pristiños por un dólar",
+        "quantity": 1
+      },
+      {
+        "dishId": 1748991299155,
+        "name": "Costilla de cerdo",
+        "price": "7.50",
+        "image": "/uploads/1748991299151-693048230.png",
+        "description": "Costilla de cerdo servida con choclo, papa chaucha, ensalada y salsas: queso, mayonesa y vinagreta.",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "email": "dharo@gmail.com",
+    "items": [
+      {
+        "dishId": 1748991424708,
+        "name": "Cariucho de costilla de cerdo",
+        "price": "7.50",
+        "image": "/uploads/1748991424706-380710856.png",
+        "description": "Costilla de cerdo con papas en salsa de maní, acompañada de tomate, aguacate y lechuga fresca.",
+        "quantity": 1
+      },
+      {
+        "dishId": 1747168445805,
+        "name": "Espumilla",
+        "price": "0.50",
+        "image": "/uploads/1747168445802-45896671.jpg",
+        "description": "Espumilla",
+        "quantity": 1
+      },
+      {
+        "dishId": 1748991711214,
+        "name": "Morocho",
+        "price": "1",
+        "image": "/uploads/1748991711214-591202347.jpeg",
+        "description": "1 vaso de Morocho",
+        "quantity": 1
+      }
+    ]
+  }
+]

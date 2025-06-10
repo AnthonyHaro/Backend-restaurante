@@ -1,0 +1,231 @@
+[
+  {
+    "id": 1747777113606,
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "id": 1747177376509,
+        "name": "Chuletas",
+        "price": "3.50",
+        "description": "Chuletas con papas, ensalada y arroz ",
+        "image": "/uploads/1747177376506-627858479.jpg",
+        "category": "tradicionales",
+        "quantity": 1
+      },
+      {
+        "id": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "description": "6 pristiños por un dólar",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "category": "postres",
+        "quantity": 2
+      }
+    ],
+    "total": 5.5,
+    "status": "Entregado",
+    "date": "2025-05-20T21:38:33.606Z"
+  },
+  {
+    "id": 1747781671104,
+    "email": "belen@gmail.com",
+    "items": [
+      {
+        "id": 1747168445805,
+        "name": "Espumilla",
+        "price": "0.50",
+        "description": "Espumilla",
+        "image": "/uploads/1747168445802-45896671.jpg",
+        "category": "postres",
+        "quantity": 3
+      },
+      {
+        "id": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "description": "6 pristiños por un dólar",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "category": "postres",
+        "quantity": 1
+      }
+    ],
+    "total": 2.5,
+    "status": "Enviado",
+    "date": "2025-05-20T22:54:31.104Z"
+  },
+  {
+    "id": 1747782253611,
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "id": 1747168445805,
+        "name": "Espumilla",
+        "price": "0.50",
+        "description": "Espumilla",
+        "image": "/uploads/1747168445802-45896671.jpg",
+        "category": "postres",
+        "quantity": 1
+      },
+      {
+        "id": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "description": "6 pristiños por un dólar",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "category": "postres",
+        "quantity": 1
+      },
+      {
+        "id": 1747177376509,
+        "name": "Chuletas",
+        "price": "3.50",
+        "description": "Chuletas con papas, ensalada y arroz ",
+        "image": "/uploads/1747177376506-627858479.jpg",
+        "category": "tradicionales",
+        "quantity": 3
+      }
+    ],
+    "total": 12,
+    "status": "Entregado",
+    "date": "2025-05-20T23:04:13.611Z"
+  },
+  {
+    "id": 1748387718960,
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "id": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "description": "6 pristiños por un dólar",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "category": "postres",
+        "quantity": 1
+      },
+      {
+        "id": 1747177376509,
+        "name": "Chuletas",
+        "price": "3.50",
+        "description": "Chuletas con papas, ensalada y arroz ",
+        "image": "/uploads/1747177376506-627858479.jpg",
+        "category": "tradicionales",
+        "quantity": 2
+      }
+    ],
+    "total": 8,
+    "status": "Enviado",
+    "date": "2025-05-27T23:15:18.960Z"
+  },
+  {
+    "id": 1748822067077,
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "id": 1747168445805,
+        "name": "Espumilla",
+        "price": "0.50",
+        "description": "Espumilla",
+        "image": "/uploads/1747168445802-45896671.jpg",
+        "category": "postres",
+        "quantity": 2
+      },
+      {
+        "id": 1747177376509,
+        "name": "Chuletas",
+        "price": "3.50",
+        "description": "Chuletas con papas, ensalada y arroz ",
+        "image": "/uploads/1747177376506-627858479.jpg",
+        "category": "tradicionales",
+        "quantity": 1
+      }
+    ],
+    "total": 4.5,
+    "status": "Pendiente",
+    "date": "2025-06-01T23:54:27.077Z"
+  },
+  {
+    "id": 1748894472298,
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "id": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "description": "6 pristiños por un dólar",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "category": "postres",
+        "quantity": 2
+      },
+      {
+        "id": 1747177376509,
+        "name": "Chuletas",
+        "price": "3.50",
+        "description": "Chuletas con papas, ensalada y arroz ",
+        "image": "/uploads/1747177376506-627858479.jpg",
+        "category": "tradicionales",
+        "quantity": 1
+      }
+    ],
+    "total": 5.5,
+    "status": "Pendiente",
+    "date": "2025-06-02T20:01:12.298Z"
+  },
+  {
+    "id": 1748895479302,
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "id": 1746929774408,
+        "name": "Pristiños con miel",
+        "price": "1.00",
+        "description": "6 pristiños por un dólar",
+        "image": "/uploads/1746929774391-29171009.jpg",
+        "category": "postres",
+        "quantity": 1
+      }
+    ],
+    "total": 1,
+    "status": "Pendiente",
+    "date": "2025-06-02T20:17:59.302Z"
+  },
+  {
+    "id": 1748901010597,
+    "email": "haroanthony488@gmail.com",
+    "items": [
+      {
+        "id": 1747177376509,
+        "name": "Chuletas",
+        "price": "3.50",
+        "description": "Chuletas con papas, ensalada y arroz ",
+        "image": "/uploads/1747177376506-627858479.jpg",
+        "category": "tradicionales",
+        "quantity": 1
+      }
+    ],
+    "total": 3.5,
+    "address": "conocoto",
+    "contact": "0998745123",
+    "status": "Enviado",
+    "date": "2025-06-02T21:50:10.597Z"
+  },
+  {
+    "id": 1749426931078,
+    "email": "dharo@gmail.com",
+    "items": [
+      {
+        "id": 1748991424708,
+        "name": "Cariucho de costilla de cerdo",
+        "price": "7.50",
+        "description": "Costilla de cerdo con papas en salsa de maní, acompañada de tomate, aguacate y lechuga fresca.",
+        "image": "/uploads/1748991424706-380710856.png",
+        "category": "tradicionales",
+        "quantity": 1
+      }
+    ],
+    "total": 7.5,
+    "address": "av. camilo ponce enrique",
+    "contact": "0995984756",
+    "status": "Pendiente",
+    "date": "2025-06-08T23:55:31.078Z"
+  }
+]

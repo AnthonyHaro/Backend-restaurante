@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1746929774408,
+    "name": "Pristiños con miel",
+    "price": "1.00",
+    "description": "6 pristiños por un dólar",
+    "image": "/uploads/1746929774391-29171009.jpg",
+    "category": "postres"
+  },
+  {
+    "id": 1747168445805,
+    "name": "Espumilla",
+    "price": "0.50",
+    "description": "Espumilla",
+    "image": "/uploads/1747168445802-45896671.jpg",
+    "category": "postres"
+  },
+  {
+    "id": 1747177376509,
+    "name": "Asado de Chuleta",
+    "price": "3.50",
+    "description": "Chuletas con papas, ensalada y arroz ",
+    "image": "/uploads/1747177376506-627858479.jpg",
+    "category": "tradicionales"
+  },
+  {
+    "id": 1748991299155,
+    "name": "Costilla de cerdo",
+    "price": "7.50",
+    "description": "Costilla de cerdo servida con choclo, papa chaucha, ensalada y salsas: queso, mayonesa y vinagreta.",
+    "image": "/uploads/1748991299151-693048230.png",
+    "category": "tradicionales"
+  },
+  {
+    "id": 1748991424708,
+    "name": "Cariucho de costilla de cerdo",
+    "price": "7.50",
+    "description": "Costilla de cerdo con papas en salsa de maní, acompañada de tomate, aguacate y lechuga fresca.",
+    "image": "/uploads/1748991424706-380710856.png",
+    "category": "tradicionales"
+  },
+  {
+    "id": 1748991512091,
+    "name": "COSTILLABBQ",
+    "price": "7.50",
+    "description": "Costilla de cerdo BBQ acompañada de papas fritas, ensalada, mayonesa y vinagreta.",
+    "image": "/uploads/1748991512090-985649249.png",
+    "category": "tradicionales"
+  },
+  {
+    "id": 1748991579214,
+    "name": "Empanadas de morocho",
+    "price": "0.50",
+    "description": "Empanadas de morocho",
+    "image": "/uploads/1748991579213-745813386.png",
+    "category": "postres"
+  },
+  {
+    "id": 1748991664356,
+    "name": "Colada Morada",
+    "price": "1.50",
+    "description": "Colada morada tradicional",
+    "image": "/uploads/1748991892668-323100489.jpeg",
+    "category": "bebidas"
+  },
+  {
+    "id": 1748991711214,
+    "name": "Morocho",
+    "price": "1",
+    "description": "1 vaso de Morocho",
+    "image": "/uploads/1748991711214-591202347.jpeg",
+    "category": "bebidas"
+  },
+  {
+    "id": 1748991856129,
+    "name": "Pan de casa",
+    "price": "1",
+    "description": "Pan de casa, maíz o leche",
+    "image": "/uploads/1748991856123-613236859.png",
+    "category": "postres"
+  },
+  {
+    "id": 1749519925155,
+    "name": "Parrillada a la Campesina",
+    "price": "11",
+    "description": "Cinco tipos de embutidos, 18 de pollo, chuleta, con choclo, papa chaucha, ensalada y salsas: queso, mayonesa y vinagreta.",
+    "image": "/uploads/1749519925121-592881431.png",
+    "category": "tradicionales"
+  },
+  {
+    "id": 1749520032254,
+    "name": "Cariucho de Pollo",
+    "price": "6.50",
+    "description": "14 de pollo acompañado de papas en salsa de maní, tomate, aguacate y lechuga fresca.",
+    "image": "/uploads/1749520032230-830394147.png",
+    "category": "tradicionales"
+  },
+  {
+    "id": 1749520240933,
+    "name": "Asado de Pollo",
+    "price": "6.50",
+    "description": "14 de pollo con papa chaucha, choclo, ensalada y salsas: queso, mayonesa y vinagreta.",
+    "image": "/uploads/1749520240913-120890065.png",
+    "category": "tradicionales"
+  },
+  {
+    "id": 1749520429823,
+    "name": "Cariucho de Chuleta",
+    "price": "6.50",
+    "description": "Chuleta acompañada de papas en salsa de maní, tomate, aguacate y lechuga fresca.",
+    "image": "/uploads/1749520429822-963412909.png",
+    "category": "tradicionales"
+  }
+]

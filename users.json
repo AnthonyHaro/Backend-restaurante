@@ -1,0 +1,92 @@
+[
+  {
+    "name": "anthony Haro",
+    "email": "haroanthony488@gmail.com",
+    "address": "av. camilo ponce enrique",
+    "password": "Davidharo1"
+  },
+  {
+    "name": "belen haro",
+    "email": "belen@gmail.com",
+    "address": "Sangolqui",
+    "password": "123456"
+  },
+  {
+    "name": "david",
+    "email": "david@gmail.com",
+    "address": "Quito",
+    "password": "123456",
+    "contact": "0998918163"
+  },
+  {
+    "name": "Melani",
+    "email": "melani@gmail.com",
+    "address": "guayaquil",
+    "password": "123456",
+    "contact": "0321654987"
+  },
+  {
+    "name": "Carlos Ushiña",
+    "email": "carlos@gmail.com",
+    "address": "Sangolqui",
+    "password": "123456",
+    "contact": "0998918163"
+  },
+  {
+    "name": "tatiana",
+    "email": "tatiana@gmail.com",
+    "address": "av. camilo ponce enrique",
+    "password": "456789",
+    "contact": "0998918163"
+  },
+  {
+    "name": "gary",
+    "email": "gary@gmail.com",
+    "address": "Sangolqui",
+    "password": "123789",
+    "contact": "0998918163"
+  },
+  {
+    "name": "jose",
+    "email": "jose@gmail.com",
+    "address": "guayaquil",
+    "password": "456123",
+    "contact": "0995984756"
+  },
+  {
+    "name": "cesar",
+    "email": "cesar@gmail.com",
+    "address": "Sangolqui",
+    "password": "123456",
+    "contact": "0998918163"
+  },
+  {
+    "name": "fabri",
+    "email": "fabri@gmail.com",
+    "address": "Quito",
+    "password": "789465",
+    "contact": "0321654987"
+  },
+  {
+    "name": "jaren",
+    "email": "jaren@gmail.com",
+    "address": "conocoto",
+    "password": "123456",
+    "contact": "0321654987"
+  },
+  {
+    "name": "anthony Haro",
+    "email": "dharo@gmail.com",
+    "address": "av. camilo ponce enrique",
+    "password": "123456",
+    "contact": "0995984756"
+  },
+  {
+    "name": "anthony Haro",
+    "email": "haroanthony48@gmail.com",
+    "address": "av. camilo ponce enrique",
+    "password": "123456",
+    "contact": "0998918163",
+    "cedula": "1728540186"
+  }
+]
