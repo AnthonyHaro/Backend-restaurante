@@ -3,7 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
 const multer = require('multer');
-const bcrypt = require('bcrypt');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
@@ -37,8 +36,8 @@ app.get('/', (req, res) => {
   res.send('API de Restaurante en funcionamiento OwO');
 });
 
-/* ========== USUARIOS ========== */
-app.post('/api/register', async (req, res) => {
+/* ========== USUARIOS (sin bcrypt) ========== */
+app.post('/api/register', (req, res) => {
   const { name, email, address, password, contact, cedula } = req.body;
   if (!name || !email || !address || !password || !contact || !cedula)
     return res.status(400).json({ message: 'Faltan campos' });
@@ -49,35 +48,28 @@ app.post('/api/register', async (req, res) => {
   if (users.find(u => u.cedula === cedula))
     return res.status(400).json({ message: 'La cédula ya está registrada' });
 
-  const hashedPassword = await bcrypt.hash(password, 10);
-  users.push({ name, email, address, password: hashedPassword, contact, cedula });
+  users.push({ name, email, address, password, contact, cedula });
   saveJSON(USERS_FILE, users);
   res.status(201).json({ message: 'Usuario registrado con éxito' });
 });
 
-app.post('/api/login', async (req, res) => {
+app.post('/api/login', (req, res) => {
   const { email, password } = req.body;
   const users = readJSON(USERS_FILE);
-  const user = users.find(u => u.email === email);
+  const user = users.find(u => u.email === email && u.password === password);
   if (!user) return res.status(401).json({ message: 'Correo o contraseña incorrectos' });
-
-  const isMatch = await bcrypt.compare(password, user.password);
-  if (!isMatch) return res.status(401).json({ message: 'Correo o contraseña incorrectos' });
 
   const { password: _, ...userData } = user;
   res.json({ message: 'Inicio de sesión exitoso', user: userData });
 });
 
-app.post('/api/change-password', async (req, res) => {
+app.post('/api/change-password', (req, res) => {
   const { email, oldPassword, newPassword } = req.body;
   const users = readJSON(USERS_FILE);
-  const index = users.findIndex(u => u.email === email);
-  if (index === -1) return res.status(401).json({ message: 'Usuario no encontrado' });
+  const index = users.findIndex(u => u.email === email && u.password === oldPassword);
+  if (index === -1) return res.status(401).json({ message: 'Contraseña actual incorrecta o usuario no encontrado' });
 
-  const isMatch = await bcrypt.compare(oldPassword, users[index].password);
-  if (!isMatch) return res.status(401).json({ message: 'Contraseña actual incorrecta' });
-
-  users[index].password = await bcrypt.hash(newPassword, 10);
+  users[index].password = newPassword;
   saveJSON(USERS_FILE, users);
   res.json({ message: 'Contraseña actualizada correctamente' });
 });
@@ -151,8 +143,6 @@ app.delete('/api/dishes/:id', (req, res) => {
 });
 
 /* ========== CARRITO ========== */
-// (igual que antes)
-
 app.get('/api/cart/:email', (req, res) => {
   const cart = readJSON(CART_FILE);
   const dishes = readJSON(DISHES_FILE);
