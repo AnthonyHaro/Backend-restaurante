@@ -149,11 +149,17 @@ app.get('/api/cart/:email', (req, res) => {
   const userCart = cart.find(c => c.email === req.params.email);
   if (!userCart) return res.json([]);
 
-  const enrichedItems = userCart.items.map(item => {
+    const enrichedItems = userCart.items.map(item => {
     const dish = dishes.find(d => d.id === item.dishId);
-    return dish ? { ...dish, quantity: item.quantity } : item;
+    if (dish) {
+      return {
+        ...dish,
+        quantity: item.quantity,
+        dishId: item.dishId // ⬅️ CLAVE: Mantén dishId en la respuesta
+      };
+    }
+    return { ...item, dishId: item.dishId };
   });
-
   res.json(enrichedItems);
 });
 
@@ -193,17 +199,22 @@ app.delete('/api/cart/:email', (req, res) => {
 
 app.delete('/api/cart/:email/:dishId', (req, res) => {
   const email = decodeURIComponent(req.params.email);
-  const dishId = parseInt(req.params.dishId, 10); 
+  const dishId = parseInt(req.params.dishId, 10);
+
   const cart = readJSON(CART_FILE);
   const userCart = cart.find(c => c.email === email);
   if (!userCart) {
     return res.status(404).json({ message: 'Carrito no encontrado' });
   }
+
   const initialLength = userCart.items.length;
-  userCart.items = userCart.items.filter(item => item.id !== dishId); 
+
+  userCart.items = userCart.items.filter(item => item.dishId !== dishId);
+
   if (userCart.items.length === initialLength) {
     return res.status(404).json({ message: 'Plato no encontrado en el carrito' });
   }
+
   saveJSON(CART_FILE, cart);
   res.json({ message: 'Plato eliminado del carrito' });
 });
