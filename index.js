@@ -193,7 +193,7 @@ app.delete('/api/cart/:email', (req, res) => {
 
 app.delete('/api/cart/:email/:id', (req, res) => {
   const email = decodeURIComponent(req.params.email);
-  const id = Number(req.params.id);
+  const id = req.params.id;  // Aquí no conviertas a Number
 
   console.log('Solicitud DELETE para eliminar plato del carrito');
   console.log('Email:', email);
@@ -205,18 +205,22 @@ app.delete('/api/cart/:email/:id', (req, res) => {
     console.log('Error: Carrito no encontrado para el email:', email);
     return res.status(404).json({ message: 'Carrito no encontrado' });
   }
-  console.log('IDs en el carrito:', userCart.items.map(item => item.id));
+
+  console.log('DishIds en el carrito:', userCart.items.map(item => item.dishId));
+
   const initialLength = userCart.items.length;
-  userCart.items = userCart.items.filter(item => item.id != id);
+  userCart.items = userCart.items.filter(item => item.dishId !== id);
 
   if (userCart.items.length === initialLength) {
-    console.log('Error: Plato no encontrado en el carrito con id:', id);
+    console.log('Error: Plato no encontrado en el carrito con dishId:', id);
     return res.status(404).json({ message: 'Plato no encontrado en el carrito' });
   }
+
   saveJSON(CART_FILE, cart);
   console.log('Plato eliminado correctamente:', id);
   res.json({ message: 'Plato eliminado del carrito' });
 });
+
 
 /* ========== PEDIDOS ========== */
 app.post('/api/orders', (req, res) => {
