@@ -6,7 +6,7 @@ const multer = require('multer');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const USERS_FILE = './users.json';
 const DISHES_FILE = './dishes.json';
@@ -191,16 +191,17 @@ app.delete('/api/cart/:email', (req, res) => {
   res.json({ message: 'Carrito vaciado' });
 });
 
-app.delete('/api/cart/:email/:dishId', (req, res) => {
+app.delete('/api/cart/:email/:id', (req, res) => {
   const email = decodeURIComponent(req.params.email);
-  const dishId = req.params.dishId;
+  const id = Number(req.params.id);  
 
   const cart = readJSON(CART_FILE);
   const userCart = cart.find(c => c.email === email);
   if (!userCart) return res.status(404).json({ message: 'Carrito no encontrado' });
 
   const initialLength = userCart.items.length;
-  userCart.items = userCart.items.filter(item => item.dishId !== dishId);
+  
+  userCart.items = userCart.items.filter(item => item.id !== id);
 
   if (userCart.items.length === initialLength)
     return res.status(404).json({ message: 'Plato no encontrado en el carrito' });
