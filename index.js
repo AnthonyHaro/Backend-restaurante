@@ -193,20 +193,28 @@ app.delete('/api/cart/:email', (req, res) => {
 
 app.delete('/api/cart/:email/:id', (req, res) => {
   const email = decodeURIComponent(req.params.email);
-  const id = Number(req.params.id);  
+  const id = Number(req.params.id);
+
+  console.log('Solicitud DELETE para eliminar plato del carrito');
+  console.log('Email:', email);
+  console.log('ID del plato a eliminar:', id);
 
   const cart = readJSON(CART_FILE);
   const userCart = cart.find(c => c.email === email);
-  if (!userCart) return res.status(404).json({ message: 'Carrito no encontrado' });
-
+  if (!userCart) {
+    console.log('Error: Carrito no encontrado para el email:', email);
+    return res.status(404).json({ message: 'Carrito no encontrado' });
+  }
+  console.log('IDs en el carrito:', userCart.items.map(item => item.id));
   const initialLength = userCart.items.length;
-  
-  userCart.items = userCart.items.filter(item => item.id !== id);
+  userCart.items = userCart.items.filter(item => item.id != id);
 
-  if (userCart.items.length === initialLength)
+  if (userCart.items.length === initialLength) {
+    console.log('Error: Plato no encontrado en el carrito con id:', id);
     return res.status(404).json({ message: 'Plato no encontrado en el carrito' });
-
+  }
   saveJSON(CART_FILE, cart);
+  console.log('Plato eliminado correctamente:', id);
   res.json({ message: 'Plato eliminado del carrito' });
 });
 
