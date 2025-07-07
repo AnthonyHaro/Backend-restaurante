@@ -133,7 +133,7 @@ app.put('/api/dishes/:id', upload.single('image'), (req, res) => {
 });
 
 app.delete('/api/dishes/:id', (req, res) => {
-  const dishId = req.params.id;
+  const dishId = parseInt(req.params.id, 10);
   const dishes = readJSON(DISHES_FILE);
   const updated = dishes.filter(d => d.id !== dishId);
   if (updated.length === dishes.length) return res.status(404).json({ message: 'Plato no encontrado' });
