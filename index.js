@@ -139,7 +139,7 @@ app.delete('/api/dishes/:id', (req, res) => {
   if (updated.length === dishes.length) return res.status(404).json({ message: 'Plato no encontrado' });
 
   saveJSON(DISHES_FILE, updated);
-  res.json({ message: 'Plato eliminado con éxito' });
+  res.status(200).json({ message: 'Plato eliminado con éxito' });
 });
 
 /* ========== CARRITO ========== */
