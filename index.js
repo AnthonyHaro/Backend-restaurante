@@ -222,18 +222,26 @@ app.delete('/api/cart/:email/:dishId', (req, res) => {
 
 /* ========== PEDIDOS ========== */
 app.post('/api/orders', (req, res) => {
-  const { email, items, total, address, contact } = req.body;
-  if (!email || !Array.isArray(items) || !total)
+  const { email, items, total, address, contact, observation } = req.body;
+
+  if (!email || !Array.isArray(items) || !total || !address || !contact) {
     return res.status(400).json({ message: 'Datos incompletos' });
+  }
+
+  const users = readJSON(USERS_FILE); 
+  const user = users.find(u => u.email === email); 
+  const name = user ? user.name : 'Nombre no encontrado'; 
 
   const orders = readJSON(ORDERS_FILE);
   const newOrder = {
     id: uuidv4(),
     email,
+    name, 
     items,
     total,
     address,
     contact,
+    observation: observation || '', 
     status: 'Pendiente',
     date: new Date().toISOString(),
   };
